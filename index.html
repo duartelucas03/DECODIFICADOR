@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECODIFICADOR</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <img alt="folder-lock" class="logo_site" src="./assets/folder-lock.png">
+    </header>
+    <main>
+        <div class="principal">
+            <textarea class="input_texto" placeholder="Digite seu texto aqui"></textarea>
+            <div class="info">
+                <img alt="info-light" class="info_logo" src="./assets/info-light.png">
+                <p>Letras maiúsculas e caracteres especiais não são aceitos!</p>
+            </div>
+                <div class="botoes">
+                <button onclick="criptografar()" class="crip">
+                    <img alt="lock" class="botao_img" src="./assets/lock.png">
+                    Criptografar
+                </button>
+                <button onclick="descriptografar()"class="descrip">
+                    <img alt="lock_open" class="botao_img" src="./assets/lock_open.png">
+                    Descriptografar
+                </button>
+            </div>
+        </div>
+        
+        <div id="mi_rf" class="mensagens_iniciais_e_resultado">
+            <div class="texto_resultado">
+                <img alt="lupa_erro" class="busca_img" id="lupa" src="./assets/lupa_erro.png">
+                <h3 id="msg_i" class="espaco"></h3>
+                <p id="msg_i2"></p>
+                <p id="resultado" class="resultado"></p>
+                
+            </div>
+            <button id="copiar" onclick="copiar()" class="copiar" disabled>
+                <img alt="copy" class="botao_img" src="./assets/content_copy.png">
+                Copiar
+            </button>
+            
+        </div>
+        
+    </main>
+    <footer class="rodape">
+        <h5>Desenvolvido por Lucas Soares</h5>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
